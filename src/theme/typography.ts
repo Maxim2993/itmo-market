@@ -1,0 +1,48 @@
+export const typography = {
+    title: {
+        fontFamily: 'Open Sans',
+        fontStyle: 'normal',
+        fontWeight: 400,
+        fontSize: '24px',
+        lineHeight: '33px',
+    },
+    subtitle1: {
+        fontFamily: 'Roboto',
+        fontStyle: 'normal',
+        fontWeight: 500,
+        fontSize: '24px',
+        lineHeight: '24px',
+        letterSpacing: '0.1px',
+    },
+    body1: {
+        fontFamily: 'Open Sans',
+        fontStyle: 'normal',
+        fontWeight: 400,
+        fontSize: '16px',
+        lineHeight: '22px',
+    },
+    body2: {
+        fontFamily: 'Open Sans',
+        fontStyle: 'normal',
+        fontWeight: 400,
+        fontSize: '12px',
+        lineHeight: '16px',
+    },
+    textlink2: {
+        fontFamily: 'Open Sans',
+        fontStyle: 'normal',
+        fontWeight: 300,
+        fontSize: '14px',
+        lineHeight: '24px',
+        letterSpacing: '0.1px',
+    },
+    btnContent: {
+        fontFamily: 'Open Sans',
+        fontStyle: 'normal',
+        fontWeight: 700,
+        fontSize: '24px',
+        lineHeight: '18px',
+        letterSpacing: '0.15px',
+        textTransform: 'uppercase',
+    },
+}

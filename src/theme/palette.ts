@@ -11,4 +11,7 @@ export const palette = {
         main: '#414549',
         disabled: '#B9B9B7',
     },
+    background: {
+        default: '#E7E2DE',
+    },
 };

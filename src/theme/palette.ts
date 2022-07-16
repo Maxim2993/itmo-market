@@ -11,9 +11,4 @@ export const palette = {
         main: '#414549',
         disabled: '#B9B9B7',
     },
-    text: {
-        primary: '#000000',
-        secondary: '#7f7f7f',
-        white: '#FFFFFF'
-    },
 };

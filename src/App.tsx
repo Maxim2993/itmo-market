@@ -1,14 +1,25 @@
 import React from 'react';
-import { ButtonGroup } from './UI-components/molecules/ButtonGroup';
-import { LoginWindow } from './UI-components/molecules/LoginWindow'
-import { PageComponent } from './UI-components/organisms/PageComponent'
+import { Routes, Route, Navigate } from 'react-router-dom';
+
+import { LoginPage } from './pages';
+import { MainPage } from './pages';
+import { PrivateRoute } from './routes/PrivateRoute';
+
 
 function App() {
   return (
-    <PageComponent>
-      <ButtonGroup />
-      <LoginWindow />
-    </PageComponent>
+    <Routes>
+      <Route path="/" element={<LoginPage />} />
+      <Route
+        path="/main"
+        element={
+          <PrivateRoute>
+            <MainPage />
+          </PrivateRoute>
+        }
+      />
+      <Route path="*" element={<Navigate to={'/'} replace />} />
+    </Routes>
   )
 }
 

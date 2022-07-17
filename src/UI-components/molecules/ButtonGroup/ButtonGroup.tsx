@@ -5,7 +5,7 @@ import { Button } from '../../atoms/Button';
 export const ButtonGroup = () => {
     return (
         <Box component='section' sx={{
-            position: 'relative',
+            position: 'relative', width: '612px'
         }}>
             <Button content='projects' sx={{ position: 'absolute', top: '127px' }} />
             <Button content='market' sx={{ position: 'absolute', left: '259.2px' }} />

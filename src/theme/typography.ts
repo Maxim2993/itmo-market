@@ -6,7 +6,7 @@ export const typography = {
         fontSize: '24px',
         lineHeight: '33px',
     },
-    subtitle1: {
+    h2: {
         fontFamily: 'Roboto',
         fontStyle: 'normal',
         fontWeight: 500,

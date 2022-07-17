@@ -10,7 +10,7 @@ type Props = {
 };
 
 export const PageComponent: FC<Props> = ({ children }) => {
-    const Main = styled('main')({ display: 'flex', flex: '1 0 auto' });
+    const Main = styled('main')({ display: 'flex', justifyContent: 'space-between' });
 
     return (
         <Box

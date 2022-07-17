@@ -14,4 +14,8 @@ export const palette = {
     background: {
         default: '#E7E2DE',
     },
+    text: {
+        primary: 'rgba(0, 0, 0, 0.7)',
+        secondary: 'rgba(0, 0, 0, 0.5)',
+    },
 };

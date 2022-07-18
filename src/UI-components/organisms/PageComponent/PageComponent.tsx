@@ -10,7 +10,13 @@ type Props = {
 };
 
 export const PageComponent: FC<Props> = ({ children }) => {
-    const Main = styled('main')({ display: 'flex', justifyContent: 'space-between' });
+    const Main = styled('main')({
+        display: 'flex',
+        flex: '1 0 auto',
+        height: '100vh',
+        justifyContent: 'space-evenly',
+        alignItems: 'center'
+    });
 
     return (
         <Box
@@ -21,7 +27,7 @@ export const PageComponent: FC<Props> = ({ children }) => {
                 backgroundBlendMode: 'multiply',
                 backgroundSize: 'cover',
                 backgroundRepeat: 'no-repeat',
-                padding: `${theme.spacing(8)} ${theme.spacing(10)}`
+                paddingRight: `${theme.spacing(6)}`
             }}
         >
             <Main>{children}</Main>

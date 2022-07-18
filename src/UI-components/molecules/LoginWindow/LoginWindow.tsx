@@ -1,5 +1,4 @@
 import React from 'react';
-import { useDispatch } from 'react-redux'
 import { useNavigate } from "react-router-dom";
 import { useFormik } from 'formik';
 
@@ -14,9 +13,10 @@ import TextField from '@mui/material/TextField';
 import { theme } from '../../../theme';
 import { Section } from './LoginWindow.styles';
 import { login } from '../../../app/redux/slices/auth/authSlice';
+import { useAppDispatch } from '../../../app/redux/hooks';
 
 export const LoginWindow = () => {
-    const dispatch = useDispatch()
+    const dispatch = useAppDispatch()
     const navigate = useNavigate();
 
     const formik = useFormik({
@@ -32,13 +32,13 @@ export const LoginWindow = () => {
                 email: values.email,
                 isAuth: true
             }));
-            navigate('../main');
+            navigate('../main', { replace: true });
         },
     });
 
     return (
         <Section>
-            <Typography variant="h2" align="left">
+            <Typography variant="h2" align="left" sx={{ color: theme.palette.common.black }}>
                 Sign In
             </Typography>
             <Box component="form" sx={{ mt: 3, display: 'flex', flexDirection: 'column' }} onSubmit={formik.handleSubmit} >

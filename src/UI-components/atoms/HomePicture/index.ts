@@ -1,0 +1,1 @@
+export { HomePicture } from './HomePicture';

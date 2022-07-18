@@ -39,10 +39,9 @@ export const typography = {
     btnContent: {
         fontFamily: 'Open Sans',
         fontStyle: 'normal',
-        fontWeight: 700,
-        fontSize: '24px',
+        fontWeight: 400,
+        fontSize: '10px',
         lineHeight: '18px',
-        letterSpacing: '0.15px',
-        textTransform: 'uppercase',
+        letterSpacing: '0.1px',
     },
 }

@@ -3,13 +3,13 @@ import { css } from '@mui/system';
 import { ButtonPropTypes } from './Button.types';
 import { styled } from '../../../theme/styled';
 
+import cursor from '../../../assets/Vector.png';
+
 export const ButtonStyled = styled('button') <ButtonUnstyledProps & ButtonPropTypes>`
 border: none;
 width: 250px;
 height: 250px;
-margin: 51px;
-transform: rotate(45deg);
-cursor: pointer;
+// cursor: pointer;
 border-radius: 20px; 
 font-family: 'Open Sans';
 font-style: normal;
@@ -18,6 +18,7 @@ font-size: 24px;
 line-height: 18px;
 letter-spacing: 0.15px;
 text-transform: uppercase;
+cursor: url(${cursor}), pointer;
 color: ${(props) => props.theme.palette.common.white};
 
 &:hover {

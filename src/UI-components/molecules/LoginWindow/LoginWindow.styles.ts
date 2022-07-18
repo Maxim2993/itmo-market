@@ -1,8 +1,7 @@
 import { styled } from '../../../theme/styled';
 
-export const Section = styled('section')(({ theme }) => ({
+export const Section = styled('div')(({ theme }) => ({
     width: '302px',
-    // height: '314px',
+    alignSelf: 'center',
     position: 'relative'
-    // alignSelf: 'center',
 }));
